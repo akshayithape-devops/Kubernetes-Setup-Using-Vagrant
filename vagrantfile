@@ -29,7 +29,7 @@ Vagrant.configure("2") do |config|
             bridge: connection_interface,
             ip: master_node_ip
         master.vm.provision "shell", path: "./scripts/common_install.sh"
-        master.vm.provision "shell", path: "./scripts/docker_install.sh"
+        master.vm.provision "shell", path: "./scripts/cri-o_install.sh"
         master.vm.provision "shell", path: "./scripts/kube_tools_install.sh"
         master.vm.provision "shell", path: "./scripts/cluster-create.sh", env: {"master_node_ip" => "#{master_node_ip}"}
         master.vm.provision "shell", path: "./scripts/setup-nonroot.sh"
@@ -50,7 +50,7 @@ Vagrant.configure("2") do |config|
                 bridge: connection_interface,
                 ip: "#{worker_node_ip_start}#{i+200}"
             node.vm.provision "shell", path: "./scripts/common_install.sh"
-            node.vm.provision "shell", path: "./scripts/docker_install.sh"
+            node.vm.provision "shell", path: "./scripts/cri-o_install.sh"
             node.vm.provision "shell", path: "./scripts/kube_tools_install.sh"
             node.vm.provision "shell", path: "./scripts/cluster-join.sh", env: {"master_node_ip" => "#{master_node_ip}"}
         end
