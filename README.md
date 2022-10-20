@@ -20,7 +20,7 @@ We are going to setup kubernetes cluster on VM using Vagrant.
 - Kubeadm Version : Latest(v1.25.0)
 - Kubectl Version : Latest(v1.25.0)
 - kubelet Version : Latest(v1.25.0)
-- CNI : Weave Net(Latest)
+- CNI : Weave Net(Latest) - Automatic install 
 
 ## Project Architecture 
 
