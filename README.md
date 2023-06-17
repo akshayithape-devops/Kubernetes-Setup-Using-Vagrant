@@ -16,11 +16,11 @@ We are going to setup kubernetes cluster on VM using Vagrant.
 ## Project Overview 
 
 - Base Image : ubuntu/focal64
-- CRI-O Version : Latest(1.25.0)
-- Kubeadm Version : Latest(v1.25.0)
-- Kubectl Version : Latest(v1.25.0)
-- kubelet Version : Latest(v1.25.0)
-- CNI : Weave Net(Latest) - Automatic install 
+- CRI-O Version : Latest(1.27.0)
+- Kubeadm Version : Latest(v1.27.0)
+- Kubectl Version : Latest(v1.27.0)
+- kubelet Version : Latest(v1.27.0)
+- CNI : Weave Net(Latest) - Latest(v2.8.1)
 
 ## Project Architecture 
 

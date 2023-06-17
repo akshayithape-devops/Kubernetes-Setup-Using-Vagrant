@@ -1,7 +1,7 @@
 #!/bin/bash
 
 OS=xUbuntu_20.04
-VERSION=1.25
+VERSION=1.27
 
 ## Setup the Repository 
 
